@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
+
+body{
+  margin: 0;
+
+  background-color: #F2F1E9;
+}
+
+header{
+  display: flex;
+  background-color: #FFFFFF;
+  height: 50px;
+  font-family: 'Roboto';
+}
+nav{
+  display: inline-flex;
+  background-color: #FFFFFF;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a{
+  display: inline;
+  background-color: #FFFFFF;
+  background-color:;
+  padding: 10px;
+  margin-left: 25px;
+  justify-content: center;
+
+}
+nav a:active{
+  color: #968772
+}
+
+nav a:hover{
+  color: #CD5D67
+}
+
+h1{
+  text-align: center;
+  font-family: 'Merriweather';
+  font-size: 70px;
+  font-weight: normal;
+  color:  #131511;
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Merriweather';
+  font-size: 40px;
+  font-weight: normal;
+  color:  #131511;
+  position: relative;
+  z-index: 2;
+
+}
+
+
+.page_heading{
+  font-family: 'Roboto'
+}
+
+main{
+  margin: 0;
+  word-wrap: normal;
+}
+
+.product-imgs{
+  list-style: none;
+  flex-flow: row;
+}
+
+.product-image{
+  margin: 10px;
+}
+
+#product1{
+  background-image: url('images/product-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 725px;
+
+}
+#product2{
+  background-image: url('images/product-2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 365px;
+  width: 227px;
+}
+
+#product3{
+  background-image: url('images/product-3.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 365px;
+  width: 227px;
+}
+
+#product4{
+  background-image: url('images/product-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 236px;
+}
+
+#product5{
+  background-image: url('images/procuct-5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 236px;
+  }
+
+#procuct6{
+  background-image: url('images/procuct-6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 478px;
+  height: 232px;
+}
+#product7{
+  background-image: url('images/product-7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 239;
+  width: 229;
+}
+
+
+
+
+
+/* ABOUT PAGE*/
+
+
+
+article img{
+  background-image: url('images/birdhouse.jpg');
+  width: 119px;
+  height: 153px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-resolution: from-image;
+  float: left;
+}
+
+  article{
+    display: inline;
+    float: right;
+    margin: 80px;
+  }
+
+.middle_picture img{
+  background-image: url('..images/product-1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px;
+}
+.mid-page-msg{
+  background-image: url('..images/product-1.jpg');
+  background-color: #2B2F26;
+  color: white;
+}
+
+table{
+  margin: 0 20% 20% 20%;
+  padding: 25px;
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #F2E9DD ;
+}
+thead{
+  font-weight: bold;
+}
+
+th{
+  font-weight: bold;
+  border: thin solid #2B2F26;
+  padding: 15px;
+}
+
+tr td{
+  text-align: left;
+}
+
+td{
+  padding: 15px;
+  border: thin solid #2B2F26;
+  text-align: left;
+}
+
+
+
+#aloe{
+  background-image: url('background-3.jpg');
+}
+
+/*NEWSLETTER PAGE*/
+
+
+.background-2{
+  background-image: url('images/background-2.jpg');
+  background-size: cover;*/
+}
+
+
+
+fieldset{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 614px;
+  height: 380px;
+  margin: 60px 60px 60px 80px;
+  background-color: #FFFFFF;
+}
+
+form{
+  background-color: #FFFFFF;
+  justify-content: center;
+}
+
+form h1 .news-header1{
+  font: 16px bold #131511;
+  text-align: center;
+}
+
+.news-header2{
+  font: 14px #131511;
+}
+
+label{
+  font: 16px #131511;
+  padding: 10px;
+}
+
+input{
+  border-bottom: solid  #968772;
+  border-color: #968772;
+  border-style: none;
+  width: 500px;
+  padding: 10px;
+}
+
+button{
+  font: 20px 'Roboto';
+  padding: 10px;
+  margin: 60px 25px 60px 25px;
+  color: #F2F1E8;
+  background-color: #968772;
+}
+
+footer{
+  background-color: #2B2F27;
+  color: white;
+  width: auto;
+  padding: 25px;
+}
