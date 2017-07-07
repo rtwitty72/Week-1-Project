@@ -10,7 +10,7 @@ header{
   font-family: 'Roboto';
   position: fixed;
   width: 100%;
-  height: 60px;
+  top: 0;
   justify-content: center;
   align-content: center;
 }
@@ -23,8 +23,9 @@ nav{
   position: fixed;
   list-style-type: none;
   width: 100%;
-}
 
+
+}
 nav a{
 list-style-type: none;
 display: inline-flex;
@@ -69,9 +70,7 @@ h1{
   font-size: 70px;
   font-weight: normal;
   color:  #131511;
-  position: relative;
-  padding: ;
-  z-index: 1;
+  
 }
 
 h2{
@@ -80,8 +79,6 @@ h2{
   font-size: 40px;
   font-weight: normal;
   color:  #131511;
-  position: relative;
-  z-index: 2;
 
 }
 
