@@ -1,38 +1,66 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
 
 body{
-  margin: 0;
-
+  margin: 0px;
   background-color: #F2F1E9;
 }
 
 header{
+  background-color: #FFFFFF;
+  font-family: 'Roboto';
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-content: center;
+}
+
+nav{
   display: flex;
   background-color: #FFFFFF;
-  height: 50px;
-  font-family: 'Roboto';
+  justify-content: space-around;
+  align-content: center;
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
 }
-nav{
+
+nav a{
+list-style-type: none;
+display: inline-flex;
+justify-content: space-around;
+align-items: center;
+color: #2B2F26;
+}
+
+
+.logo img{
+  list-style-type: none;
+  float: left;
+  width: 30px;
+  height: 40px;
+
+}
+
+/*{
   display: inline-flex;
   background-color: #FFFFFF;
   justify-content: space-around;
   align-items: center;
-}
-nav a{
-  display: inline;
-  background-color: #FFFFFF;
-  background-color:;
-  padding: 10px;
-  margin-left: 25px;
-  justify-content: center;
+}*/
 
-}
+
+/*nav a{
+
+  display: inline-block;
+}*/
+
 nav a:active{
-  color: #968772
+  color: #968772;
 }
 
 nav a:hover{
-  color: #CD5D67
+  color: #CD5D67;
 }
 
 h1{
@@ -42,12 +70,12 @@ h1{
   font-weight: normal;
   color:  #131511;
   position: relative;
-  padding: 10px;
+  padding: ;
   z-index: 1;
 }
 
 h2{
-  text-align: center;
+  text-align: left;
   font-family: 'Merriweather';
   font-size: 40px;
   font-weight: normal;
@@ -58,46 +86,69 @@ h2{
 }
 
 
-.page_heading{
-  font-family: 'Roboto'
-}
-
 main{
   margin: 0;
   word-wrap: normal;
 }
 
+.Products{
+  margin-right: 15px;
+}
+
 .product-imgs{
+  display: flex;
   list-style: none;
-  flex-flow: row;
+  flex-flow: wrap;
 }
 
 .product-image{
-  margin: 10px;
+  margin: 3px;
+}
+
+.Products li text{
+  display: inline-flex;
+  padding: 5px;
+  background-color: #131511;
+  color: #F2F1E9;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-family: 'Merriweather';
+  margin-top: 200px;
 }
 
 #product1{
   background-image: url('images/product-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 360px;
+  height: 365px;
   width: 725px;
-
 }
+#product1 text{
+  margin-top: 320px;
+}
+
 #product2{
   background-image: url('images/product-2.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 365px;
   width: 227px;
+}
+
+#product2 text{
+  margin-top: 320px;
 }
 
 #product3{
   background-image: url('images/product-3.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 365px;
   width: 227px;
+}
+
+#product3 text{
+  margin-top: 320px;
 }
 
 #product4{
@@ -109,67 +160,73 @@ main{
 }
 
 #product5{
-  background-image: url('images/procuct-5.jpg');
+  background-image: url('images/product-5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 236px;
   width: 236px;
   }
 
-#procuct6{
-  background-image: url('images/procuct-6.jpg');
+#product6{
+  background-image: url('images/product-6.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 478px;
-  height: 232px;
+  width: 482px;
+  height: 236px;
 }
 #product7{
   background-image: url('images/product-7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 239;
-  width: 229;
+  height: 236px;
+  width: 239px;
 }
-
-
-
 
 
 /* ABOUT PAGE*/
 
-
-
 article img{
   background-image: url('images/birdhouse.jpg');
-  width: 119px;
-  height: 153px;
+  width: 160px;
+  height: 120px;
   background-size: cover;
   background-repeat: no-repeat;
-  image-resolution: from-image;
+  background-position: center;
   float: left;
 }
 
-  article{
-    display: inline;
-    float: right;
-    margin: 80px;
-  }
+blockquote{
+  margin: 205px;
+}
+p{
+  font-size: 20px;
+  word-wrap: normal;
+  margin: 80px;
+}
 
-.middle_picture img{
-  background-image: url('..images/product-1.jpg');
-  background-size: contain;
+h2{
+  margin: 80px;
+}
+
+ #aloe{
+  background-image: url('images/background-3.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 50px;
+  height: 324px;
+  width: ;
+  margin-left: 0px;
+
 }
-.mid-page-msg{
-  background-image: url('..images/product-1.jpg');
-  background-color: #2B2F26;
+#aloe text{
+  font-size: 40px;
   color: white;
+  margin-left: 500px;
 }
 
 table{
-  margin: 0 20% 20% 20%;
+  align-items: flex-start;
+  margin: 25px 80px 25px;
   padding: 25px;
   border-collapse: collapse;
 }
@@ -179,6 +236,10 @@ tbody tr:nth-child(odd){
 }
 thead{
   font-weight: bold;
+}
+
+.Table h2{
+  margin-left: 80px;
 }
 
 th{
@@ -199,63 +260,70 @@ td{
 
 
 
-#aloe{
-  background-image: url('background-3.jpg');
-}
 
 /*NEWSLETTER PAGE*/
 
 
 .background-2{
   background-image: url('images/background-2.jpg');
-  background-size: cover;*/
+  background-size: cover;
 }
 
 
 
 fieldset{
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  width: 614px;
-  height: 380px;
-  margin: 60px 60px 60px 80px;
+  margin: 80px 60px 80px 60px;
   background-color: #FFFFFF;
 }
 
-form{
+.Newsletter{
   background-color: #FFFFFF;
+  align-items: center;
   justify-content: center;
+  margin: 30px;
 }
 
-form h1 .news-header1{
-  font: 16px bold #131511;
+.news-header1{
+  font-size: 30px;
+  font-weight: bold;
+  color: #131511;
   text-align: center;
 }
 
 .news-header2{
-  font: 14px #131511;
+  font-size: 20px;
+  color: #131511;
+  text-align: center;
 }
 
 label{
   font: 16px #131511;
   padding: 10px;
+  font-family: 'Roboto';
 }
 
 input{
   border-bottom: solid  #968772;
   border-color: #968772;
   border-style: none;
-  width: 500px;
+  width: 200px;
   padding: 10px;
+  align-items: center;
 }
 
 button{
-  font: 20px 'Roboto';
+  display: flex;
+  font-size: 20px;
+  font-family: 'Roboto';
   padding: 10px;
-  margin: 60px 25px 60px 25px;
+  margin: 60px 60px 60px 60px;
   color: #F2F1E8;
   background-color: #968772;
+  align-items: center;
+  justify-content: center;
 }
 
 footer{
