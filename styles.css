@@ -1,3 +1,7 @@
+*{
+  box-sizing:
+}
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
 
 body{
@@ -6,13 +10,13 @@ body{
 }
 
 header{
+  display: flex;
   background-color: #FFFFFF;
   font-family: 'Roboto';
   position: fixed;
   width: 100%;
   top: 0;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 nav{
@@ -20,18 +24,18 @@ nav{
   background-color: #FFFFFF;
   justify-content: space-around;
   align-content: center;
-  position: fixed;
   list-style-type: none;
   width: 100%;
+  height: 60px;
 
 
 }
 nav a{
-list-style-type: none;
-display: inline-flex;
-justify-content: space-around;
-align-items: center;
-color: #2B2F26;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #2B2F26;
 }
 
 
@@ -40,6 +44,7 @@ color: #2B2F26;
   float: left;
   width: 30px;
   height: 40px;
+  margin-left: 10px;
 
 }
 
@@ -64,17 +69,22 @@ nav a:hover{
   color: #CD5D67;
 }
 
-h1{
+.name{
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.name h1{
   font-family: 'Merriweather';
   font-size: 70px;
   font-weight: normal;
   color:  #131511;
-  
+  margin-bottom: 10px;
+
 }
 
-h2{
-  text-align: left;
+.name span{
+
   font-family: 'Merriweather';
   font-size: 40px;
   font-weight: normal;
@@ -83,16 +93,17 @@ h2{
 }
 
 
-main{
+/*main{
   margin: 0;
   word-wrap: normal;
 }
 
 .Products{
-  margin-right: 15px;
-}
+
+}*/
 
 .product-imgs{
+
   display: flex;
   list-style: none;
   flex-flow: wrap;
@@ -184,25 +195,64 @@ main{
 
 article img{
   background-image: url('images/birdhouse.jpg');
-  width: 160px;
-  height: 120px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;
+  width: 165px;
   float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+article h1{
+  color: #131511;
+  font-size: 67px;
+  font-weight: 400px;
+  margin-bottom: 65px;
+  margin-top: 0px;
+  padding-top: 120px;
+  text-align: center;
 }
 
 blockquote{
-  margin: 205px;
+  border-left: 2px solid #968772;
+  margin-left: 20%;
 }
+
+blockquote p{
+  color: #131511;
+    font-family: 'Merriweather', serif;
+    font-size: 14.5px;
+    line-height: 2.4rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: 5%;
+    margin-right: 0;
+    padding-right: 0px;
+
+}
+
+
+
 p{
-  font-size: 20px;
-  word-wrap: normal;
-  margin: 80px;
+  font-size: 20.5px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-attachment: scroll;
+  text-align: left;
+  line-height: 2.5rem;
+
 }
 
 h2{
-  margin: 80px;
+  font-family: 'Merriweather', serif;
+  color: #131511;
+  font-size: 30px;
+  font-weight: 300;
+  margin-left: 20%;
 }
 
  #aloe{
@@ -211,19 +261,43 @@ h2{
   background-repeat: no-repeat;
   background-position: center;
   height: 324px;
-  width: ;
-  margin-left: 0px;
+  background-attachment: fixed;
+}
+
+#aloe text{
+  font-family: 'Merriweather', serif;
+  color: #FFFFFF;
+  font-size: 65px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 120px;
+  position: absolute;
+  margin-left: 40%;
 
 }
-#aloe text{
-  font-size: 40px;
-  color: white;
-  margin-left: 500px;
+
+.shelfimg{
+  width: 160px;
+  padding-top: 15px;
+  margin-right: 15%;
+  float: right;
+
+}
+
+.shelfimg img{
+  background-image: url("../images/background-1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 120px;
+  float: right;
+
 }
 
 table{
   align-items: flex-start;
-  margin: 25px 80px 25px;
+  margin-left: 20%;
+  margin-bottom: 3%;
   padding: 25px;
   border-collapse: collapse;
 }
@@ -236,7 +310,9 @@ thead{
 }
 
 .Table h2{
-  margin-left: 80px;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 1%;
 }
 
 th{
@@ -264,30 +340,35 @@ td{
 .background-2{
   background-image: url('images/background-2.jpg');
   background-size: cover;
-}
-
-
-
-fieldset{
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 80px 60px 80px 60px;
-  background-color: #FFFFFF;
+  align-items: center;
 }
 
-.Newsletter{
+
+
+form{
+  width: 611px;
+  height: 382px;
+  margin: 120px 60px 80px 60px;
   background-color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  margin: 30px;
+  padding: 30px;
 }
+
+/*.Newsletter{
+  background-color: #FFFFFF;
+  justify-content: center;
+  margin: 50%;
+}*/
 
 .news-header1{
+  font-family: 'Merriweather';
   font-size: 30px;
-  font-weight: bold;
   color: #131511;
-  text-align: center;
+  margin-bottom: 1px;
+  text-align: center ;
+  margin-left: 2px;
 }
 
 .news-header2{
@@ -296,31 +377,39 @@ fieldset{
   text-align: center;
 }
 
-label{
-  font: 16px #131511;
-  padding: 10px;
-  font-family: 'Roboto';
+/*.signupinfo{
+  font-family: "Roboto";
+  justify-content: left;
+  align-items: ;
+}*/
+
+.signupinfo input{
+  border-bottom: solid 2px #968772;
+  color: #968772;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  width: 90%;
 }
 
-input{
-  border-bottom: solid  #968772;
-  border-color: #968772;
-  border-style: none;
-  width: 200px;
-  padding: 10px;
-  align-items: center;
+.signupinfo input:focus{
+  border-bottom: #967343;
 }
 
 button{
-  display: flex;
   font-size: 20px;
   font-family: 'Roboto';
-  padding: 10px;
-  margin: 60px 60px 60px 60px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-left: 40%;
   color: #F2F1E8;
   background-color: #968772;
-  align-items: center;
-  justify-content: center;
+}
+
+button:hover{
+  background-color: #967343;
+  color: #FFFFFF;
 }
 
 footer{
